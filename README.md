@@ -1,2 +1,3 @@
 # SignUpPage
-Mock up of a sign up page I designed. Will code to get some practice coding responsive webpages.
+
+I designed this fake sign up page for an ambiguous company. I'm hoping this gives me good experience building a responsive webpage.
