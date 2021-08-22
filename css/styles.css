@@ -1,3 +1,106 @@
-body {
-  
+html, body {
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #B6FFE0;
+  background-image: url(../images/desktop-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+}
+
+.master-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.nav-bar-container {
+  align-items: center;
+  display: flex;
+  padding: 1.2rem 1.2rem 0 1.2rem;
+}
+
+.logo {
+  height: 60px;
+  padding: 0.8rem;
+}
+
+.options-container {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 300;
+  justify-content: start;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item a {
+  color: #ffffff;
+  margin-left: 2.5rem;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+
+.menu-item a:hover {
+  background: rgb(255, 255, 255, .3);
+  border-radius: 3rem;
+  padding: 0.8rem;
+}
+
+.menu-item a:active {
+  background: rgb(255, 255, 255, .2);
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto 1rem auto 1rem;
+}
+
+.greeting-container {
+  margin: 2rem;
+  min-width:;
+  max-width: 486px;
+}
+.greeting-text {
+}
+
+.hello-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.awesome-text {
+  line-height: 1.7;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+.card-container {
+  align-self: center;
+  background: #D9FEED;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+  width: 450px;
+  height: 540px;
+}
+
+
+
+footer {
+  display: flex;
+}
+
+footer img {
+  width: 60px;
+  padding:0.8rem;
+  margin-left: auto;
 }
