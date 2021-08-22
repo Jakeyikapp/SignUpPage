@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Raleway:wght@400;500;600&family=Rock+Salt&display=swap');
 
 html, body {
+  background-color: #B6FFE0;
+  background-image: url(../images/desktop-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   min-height: 100vh;
-  background-color: #B6FFE0;
-  background-image: url(../images/desktop-background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 * {
@@ -21,9 +21,9 @@ html, body {
 .top-section {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
   height: 100vh;
   margin: auto;
+  max-width: 1200px;
 }
 
 /* nav-bar start */
@@ -44,25 +44,25 @@ html, body {
 }
 
 .hellologo a {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 .menu {
-  margin: 0;
   display: flex;
   flex-direction: row;
   font-size: 1.5rem;
   font-weight: 300;
   justify-content: start;
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
 .menu-item a {
   color: #ffffff;
   margin-left: 2.5rem;
-  text-decoration: none;
   padding: 0.8rem;
+  text-decoration: none;
 }
 
 .menu-item a:hover {
@@ -85,9 +85,9 @@ html, body {
 }
 
 .greeting-text {
+  height: 100%;
   margin-right: 2rem;
   max-width: 445px;
-  height: 100%;
 }
 
 .hello-text {
@@ -98,22 +98,22 @@ html, body {
 }
 
 .awesome-text {
-  line-height: 1.7;
   font-size: 3.5rem;
   font-weight: 300;
+  line-height: 1.7;
   margin-bottom: 0;
 }
 
 .card-box {
+  backdrop-filter: blur(1.8rem);
+  background: #D9FEED;
+  border-radius: 1rem;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-  background: #D9FEED;
-  backdrop-filter: blur(1.8rem);
-  border-radius: 1rem;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
-  width: 400px;
   padding: 3.5rem 2rem;
+  width: 400px;
 }
 
 .card-box h2 {
@@ -133,9 +133,9 @@ html, body {
   border-radius: 2rem;
   color: #828180;
   font-family: 'Montserrat', sans-serif;
-  padding: 1rem;
   margin-bottom: 2.5rem;
   outline: none;
+  padding: 1rem;
 }
 
 ::placeholder {
@@ -152,10 +152,10 @@ html, body {
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
-  margin-left: auto;
   height: 47px;
-  padding-right: 1rem;
+  margin-left: auto;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .form button:hover {
@@ -168,21 +168,21 @@ html, body {
 
 footer {
   align-items: center;
-  justify-content: center;
-  display: flex;
   background: #D9FEED;
   color: #D2D2D2;
   display: flex;
+  display: flex;
   height: 6rem;
+  justify-content: center;
   padding: 1rem;
   text-align: center;
 }
 
 footer img {
-  width: 60px;
   margin-right: 1rem;
   opacity: 50%;
   transition-duration: 0.3s;
+  width: 60px;
 }
 
 footer img:hover {
@@ -201,12 +201,12 @@ footer a {
     height: auto;
   }
   .content {
-    margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   .greeting-text {
-    height: 100%;
     align-self: flex-start;
+    height: 100%;
   }
   .card-box {
     border-radius: 1rem;
@@ -231,9 +231,9 @@ footer a {
   }
 
   .menu-item a:hover {
-    color: #62FFBE;
     background: rgb(255, 255, 255);
     border-radius: 3rem;
+    color: #62FFBE;
     padding: 0.8rem;
   }
 
@@ -244,10 +244,10 @@ footer a {
   .greeting-text {
     background: #62FFBE;
     border-radius: 1rem 0 0 1rem;
+    height: 494px;
     margin-right: 0;
     padding: 2rem;
     width: 400px;
-    height: 494px;
   }
 
   .awesome-text {
@@ -256,8 +256,8 @@ footer a {
 
   .card-box {
     background: #D9FEED;
-    box-shadow: none;
     border-radius: 0 1rem 1rem 0;
+    box-shadow: none;
   }
 }
 
@@ -274,9 +274,9 @@ footer a {
   }
 
   .content {
-    margin-bottom: 2rem;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
   }
 
   .greeting-text {
@@ -297,21 +297,21 @@ footer a {
   }
   .nav-bar {
     background-color: #62FFBE;
-    padding-left: 2rem;
     justify-content: center;
+    padding-left: 2rem;
   }
   .content {
     align-items: stretch;
-    margin: 0;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    margin: 0;
   }
   .greeting-text {
     align-self: stretch;
     border-radius: 0;
-    width: 100%;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
+    width: 100%;
   }
   .hello-text {
     font-size: 4rem;
@@ -320,8 +320,8 @@ footer a {
     font-size: 2rem;
   }
   .card-box {
+    align-self: stretch;
     border-radius: 0;
     width: auto;
-    align-self: stretch;
   }
 }
