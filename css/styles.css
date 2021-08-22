@@ -57,6 +57,7 @@ html, body {
   background: rgb(255, 255, 255, .3);
   border-radius: 3rem;
   padding: 0.8rem;
+  transition-duration: 0.3s;
 }
 
 .menu-item a:active {
@@ -95,7 +96,7 @@ html, body {
   box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-  background: rgba(217, 254, 237, .7);
+  background: #D9FEED;
   backdrop-filter: blur(1.8rem);
   border-radius: 1rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
@@ -147,6 +148,34 @@ html, body {
   border: 2px solid #62FFBE;
   border-radius: 2rem;
   color: #62FFBE;
+  transition-duration: 0.3s;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: #D9FEED;
+  color: #D2D2D2;
+  display: flex;
+  height: 6rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer img {
+  width: 60px;
+  margin-right: 1rem;
+  opacity: 50%;
+  transition-duration: 0.3s;
+}
+
+footer img:hover {
+  opacity: 100%;
+}
+footer a {
+  color: #A7A7A7;
+  text-decoration: none;
 }
 
 @media (max-width:1100px) {
@@ -190,6 +219,7 @@ html, body {
   }
 
   .card-box {
+    background: #D9FEED;
     box-shadow: none;
     border-radius: 0 1rem 1rem 0;
   }
@@ -208,6 +238,7 @@ html, body {
   }
 
   .content {
+    margin-bottom: 2rem;
     justify-content: center;
     flex-direction: column;
   }
@@ -229,6 +260,7 @@ html, body {
     max-width: 100%;
   }
   .nav-bar {
+    background-color: #62FFBE;
     padding-left: 2rem;
   }
   .content {
@@ -237,22 +269,18 @@ html, body {
     justify-content: center;
     flex-direction: column;
   }
-
   .greeting-text {
     align-self: stretch;
     border-radius: 0;
     width: 100%;
     max-width: 100%;
   }
-
   .hello-text {
     font-size: 4rem;
   }
-
   .awesome-text {
     font-size: 2rem;
   }
-
   .card-box {
     border-radius: 0;
     width: auto;
@@ -264,9 +292,6 @@ html, body {
   body {
     background: #63FEBE;
   }
-  .nav-bar {
-    display: ;
-  }
   .top-section {
     height: auto;
   }
@@ -277,19 +302,4 @@ html, body {
   .card-box {
     border-radius: 0;
   }
-  footer {
-    display: none;
-  }
-}
-
-footer {
-  background: #D9FEED;
-  display: flex;
-  height: 6rem;
-  padding: 1rem;
-}
-
-footer img {
-  width: 60px;
-  margin-left: auto;
 }
