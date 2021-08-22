@@ -4,31 +4,38 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   min-height: 100vh;
-  min-width: 100%;
   background-color: #B6FFE0;
   background-image: url(../images/desktop-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: visible;
 }
 
-.master-flex {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-section {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
   height: 100vh;
+  margin: auto;
 }
-.nav-bar-container {
+
+/* nav-bar start */
+.nav-bar {
   align-items: center;
   display: flex;
-  padding: 1.2rem 1.2rem 0 1.2rem;
+  padding: 1.2rem;
 }
 
 .logo {
   height: 60px;
-  padding: 0.8rem;
 }
 
-.options-container {
+.menu {
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -56,51 +63,184 @@ html, body {
   background: rgb(255, 255, 255, .2);
 }
 
-.flex-container {
+/* nav-bar end */
+.content {
   align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: auto 1rem auto 1rem;
+  justify-content: space-between;
+  margin: auto 2rem;
 }
 
-.greeting-container {
-  margin: 2rem;
-  min-width:;
-  max-width: 486px;
-}
 .greeting-text {
+  margin-right: 2rem;
+  max-width: 445px;
+  height: 100%;
 }
 
 .hello-text {
   font-family: 'Raleway', sans-serif;
   font-size: 5rem;
-  margin: 0;
+  letter-spacing: 0.7rem;
+  margin-bottom: 1.5rem;
 }
 
 .awesome-text {
   line-height: 1.7;
   font-size: 3.5rem;
+  font-weight: 300;
   margin-bottom: 0;
 }
 
-.card-container {
-  align-self: center;
-  background: #D9FEED;
+.card-box {
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(217, 254, 237, .7);
+  backdrop-filter: blur(1.8rem);
   border-radius: 1rem;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
-  width: 450px;
-  height: 540px;
+  width: 400px;
+  padding: 3.5rem 2rem;
+}
+
+.card-box h2 {
+  color: #A7A7A7;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+::placeholder {
+  color: #D2D2D2;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.form button {
+  background-color: #62FFBE;
+  border: 2px solid #62FFBE;
+  border-radius: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  margin-left: auto;
+  height: 47px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.form button:hover {
+  background-color: #D9FEED;
+  border: 2px solid #62FFBE;
+  border-radius: 2rem;
+  color: #62FFBE;
+}
+
+@media (max-width:450px) {
+  .content {
+    align-items: stretch;
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .greeting-text {
+    align-self: stretch;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .card-box {
+    border-radius: 0;
+    width: auto;
+    align-self: stretch;
+  }
+}
+
+@media (max-width:750px) {
+
+  .top-section {
+    height: auto;
+  }
+  .menu {
+    display: none;
+  }
+  .content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .greeting-text {
+    align-self: center;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .card-box {
+    align-self: center;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+@media (max-width:1100px) {
+  body {
+    background: #B6FFE0;
+  }
+  .menu {
+    margin-left: auto;
+  }
+  .menu-item a {
+    background: #62FFBE;
+    border-radius: 3rem;
+    padding: 0.8rem;
+  }
+
+  .menu-item a:hover {
+    color: #62FFBE;
+    background: rgb(255, 255, 255);
+    border-radius: 3rem;
+    padding: 0.8rem;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  .greeting-text {
+    background: #62FFBE;
+    border-radius: 1rem 0 0 1rem;
+    margin-right: 0;
+    padding: 3rem;
+    width: 400px;
+  }
+  .awesome-text {
+    font-size: 2.5rem;
+  }
+  .card-box {
+    box-shadow: none;
+    border-radius: 0 1rem 1rem 0;
+  }
 }
 
 
 
 footer {
+  background: #D9FEED;
   display: flex;
+  height: 6rem;
+  padding: 1rem;
 }
 
 footer img {
   width: 60px;
-  padding:0.8rem;
   margin-left: auto;
 }
