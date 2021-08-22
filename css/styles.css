@@ -28,7 +28,7 @@ html, body {
 .nav-bar {
   align-items: center;
   display: flex;
-  padding: 1.2rem;
+  padding: 1.2rem 2rem;
 }
 
 .logo {
@@ -149,55 +149,17 @@ html, body {
   color: #62FFBE;
 }
 
-@media (max-width:450px) {
-  .content {
-    align-items: stretch;
-    margin: 0;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .greeting-text {
-    align-self: stretch;
-    border-radius: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-  .card-box {
-    border-radius: 0;
-    width: auto;
-    align-self: stretch;
-  }
-}
-
-@media (max-width:750px) {
-
-  .top-section {
-    height: auto;
-  }
-  .menu {
-    display: none;
-  }
-  .content {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .greeting-text {
-    align-self: center;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .card-box {
-    align-self: center;
-    border-radius: 0 0 1rem 1rem;
-  }
-}
-
 @media (max-width:1100px) {
   body {
     background: #B6FFE0;
   }
+  .top-section {
+    max-width: 800px;
+  }
   .menu {
     margin-left: auto;
   }
+
   .menu-item a {
     background: #62FFBE;
     border-radius: 3rem;
@@ -219,19 +181,106 @@ html, body {
     background: #62FFBE;
     border-radius: 1rem 0 0 1rem;
     margin-right: 0;
-    padding: 3rem;
+    padding: 2rem;
     width: 400px;
   }
+
   .awesome-text {
     font-size: 2.5rem;
   }
+
   .card-box {
     box-shadow: none;
     border-radius: 0 1rem 1rem 0;
   }
 }
 
+@media (max-width:750px) {
+  .top-section {
+    height: auto;
+    max-width: 400px;
+  }
+  .nav-bar {
+    padding-left: 0;
+  }
+  .menu {
+    display: none;
+  }
 
+  .content {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .greeting-text {
+    align-self: center;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .card-box {
+    align-self: center;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+@media (max-width:550px) {
+  .top-section {
+    height: auto;
+    max-width: 100%;
+  }
+  .nav-bar {
+    padding-left: 2rem;
+  }
+  .content {
+    align-items: stretch;
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .greeting-text {
+    align-self: stretch;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hello-text {
+    font-size: 4rem;
+  }
+
+  .awesome-text {
+    font-size: 2rem;
+  }
+
+  .card-box {
+    border-radius: 0;
+    width: auto;
+    align-self: stretch;
+  }
+}
+
+@media (max-height:586px) {
+  body {
+    background: #63FEBE;
+  }
+  .nav-bar {
+    display: ;
+  }
+  .top-section {
+    height: auto;
+  }
+  .greeting-text {
+    height: 100%;
+    align-self: stretch;
+  }
+  .card-box {
+    border-radius: 0;
+  }
+  footer {
+    display: none;
+  }
+}
 
 footer {
   background: #D9FEED;
